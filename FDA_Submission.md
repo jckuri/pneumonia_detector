@@ -21,6 +21,10 @@ The device only works with chest X-rays with the DICOM format. If you use other 
 
 **Clinical Impact of Performance:**
 
+How false positives might affect a patient? 
+
+How false negatives might affect a patient?
+
 ### 2. Algorithm Design and Function
 
 << Insert Algorithm Flowchart >>
@@ -56,7 +60,7 @@ test1.dcm
 (7fe0, 0010) Pixel Data                          OW: Array of 1048576 elements
 ```
 
-If the DICOM file that was taken by the X-ray machine has similar data, everything should work correctly. Modality should be 'DX'. Body Part Examined should be 'CHEST'. Patient Position should be either 'PA' or 'AP'. Photometric Interpretation should be MONOCHROME. Other color spaces are not supported.
+If the DICOM file that was taken by the X-ray machine has similar data, everything should work correctly. Modality should be 'DX'. Body Part Examined should be 'CHEST'. Patient Position should be either 'PA' or 'AP'. Photometric Interpretation should be MONOCHROME. Brightness levels should be in the range [0,1]. Other color spaces are not supported.
 
 **Preprocessing Steps:**
 
