@@ -56,7 +56,7 @@ test1.dcm
 (7fe0, 0010) Pixel Data                          OW: Array of 1048576 elements
 ```
 
-If the DICOM file that was taken by the X-ray machine has similar data, everything should work correctly.
+If the DICOM file that was taken by the X-ray machine has similar data, everything should work correctly. Modality should be 'DX'. Body Part Examined should be 'CHEST'. Patient Position should be either 'PA' or 'AP'. Photometric Interpretation should be MONOCHROME. Other color spaces are not supported.
 
 **Preprocessing Steps:**
 
