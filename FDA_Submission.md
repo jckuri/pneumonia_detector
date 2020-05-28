@@ -150,15 +150,15 @@ Non-trainable params: 134,260,544
 
 << Insert P-R curve >>
 
-<center><img src="AUC.png"/></center>
+<center><img src="images/AUC.png"/></center>
 
-<center><img src="PR.png"/></center>
+<center><img src="images/PR.png"/></center>
 
-<center><img src="acc_learn_curve.png"/></center>
+<center><img src="images/acc_learn_curve.png"/></center>
 
-<center><img src="loss_learn_curve.png"/></center>
+<center><img src="images/loss_learn_curve.png"/></center>
 
-<center><img src="x-rays.png"/></center>
+<center><img src="images/x-rays.png"/></center>
 
 **Final Threshold and Explanation:**
 
