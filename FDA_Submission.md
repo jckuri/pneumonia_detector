@@ -25,6 +25,8 @@ The device only works with chest X-rays with the DICOM format. If you use other 
 
 << Insert Algorithm Flowchart >>
 
+<center><img src='images/diagram.png'/></center>
+
 **DICOM Checking Steps:**
 
 Doctors only need to take a chest X-ray. The machine will generate a DICOM file like this:
