@@ -170,7 +170,7 @@ Non-trainable params: 134,260,544
 
 **Final Threshold and Explanation:**
 
-<center><img src="f1-score-plot.png"/></center>
+<center><img src="images/f1-score-plot.png"/></center>
 
 ### 4. Databases
  (For the below, include visualizations as they are useful and relevant)
