@@ -21,9 +21,11 @@ The device only works with chest X-rays with the DICOM format. If you use other 
 
 **Clinical Impact of Performance:**
 
-How false positives might affect a patient? 
+How false positives might affect a patient?<br/>
+False positives might alarm doctors in vain. They will lose some time confirming that patients really have pneumonia.
 
-How false negatives might affect a patient?
+How false negatives might affect a patient?<br/>
+False negatives could cloud doctors' judgement. They could skip a real case of pneumonia.
 
 ### 2. Algorithm Design and Function
 
