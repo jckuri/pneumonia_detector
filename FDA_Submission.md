@@ -195,7 +195,7 @@ Here are some visual examples found in such database. The classifier is somewhat
 Pneumonia cases: 1431 (1.28%)
 Non-pneumonia cases: 110689 (98.72%)
 Due to the very imbalance nature of the pneumonia cases versus non-pneumonia cases (1.28:98.72),
-I decided to balance both the training dataset and the validation dataset with a proportion of (1:5).
+both the training dataset and the validation dataset were balanced with a proportion of (1:5).
 
 1144 (pneumonia train) + 5720 (non_pneumonia train) = 6864 (all train)
 287 (pneumonia val) + 1435 (non_pneumonia val) = 1722 (all val)
@@ -217,12 +217,20 @@ Whereas the validation and test datasets have no augmentations.
 
 ### 5. Ground Truth
 
+The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive.
 
+The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. However, both the text sources and the NLP extraction could be inaccurate to some extend.
+
+For more information about how the dataset with ground truth was created, please read the following paper:
+ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al)
+https://arxiv.org/abs/1705.02315
 
 ### 6. FDA Validation Plan
 
 **Patient Population Description for FDA Validation Dataset:**
 
 **Ground Truth Acquisition Methodology:**
+
+If you read the paper `ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases` (by Xiaosong Wang et al) <https://arxiv.org/abs/1705.02315>, you will notice that both the gold standard (biopsy to laboratory) and the silver standard (diagnoses of experts and NLP text-mining) were applied to label the dataset.
 
 **Algorithm Performance Standard:**
