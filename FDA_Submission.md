@@ -188,7 +188,10 @@ Optimal threshold: 0.4412, Maximum F1-score: 0.5000
 
 ### 4. Databases
 
-The database used for training and validation is the file `Data_Entry_2017.csv`.<br/>
+The database used for training and validation is the file `Data_Entry_2017.csv`. This datase is described from the paper:
+
+ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al) https://arxiv.org/abs/1705.02315
+
 Here are some visual examples found in such database. The classifier is somewhat accurate: 93.75% accuracy in the validation dataset. In the graph, `G` means ground truth and `P` means prediction. For example: `1G,1P` means 1 (pneumonia found) in ground truth and 1 pneumonia predicted by the classifier.
 
 <p align='center'><img src="images/x-rays.png" width='50%'/></p>
