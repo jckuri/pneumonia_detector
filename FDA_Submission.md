@@ -161,18 +161,19 @@ Non-trainable params: 134,260,544
     new_model.add(Dense(1, activation='sigmoid'))
 ```
 
-Algorithm training performance:
+**Algorithm training performance:**
 
-Learning curve: Loss versus epochs
+**Learning curve: Loss versus epochs**
 <p align='center'><img src="images/loss_learn_curve.png" width='50%'/></p>
 
-Learning curve: Accuracy versus epochs
+**Learning curve: Accuracy versus epochs**
 <p align='center'><img src="images/acc_learn_curve.png" width='50%'/></p>
 
-P-R curve (Precision versus Recall)
+**P-R curve (Precision versus Recall)**<br/>
 <p align='center'><img src="images/PR.png" width='50%'/></p>
 
-AUC curve (Area Under Curve)
+**AUC curve (Area Under Curve)**<br/>
+The closer is the curve to the upper left corner, the better. AUC = 0.75. The closer AUC is to 1, the better.
 <p align='center'><img src="images/AUC.png" width='50%'/></p>
 
 **Final Threshold and Explanation:**
@@ -188,11 +189,31 @@ Here are some visual examples found in such database. The classifier is somewhat
 
 <p align='center'><img src="images/x-rays.png" width='50%'/></p>
 
-**Description of Training Dataset:** 
+**Description of Training Dataset and Validation Dataset:** 
 
+```
+Pneumonia cases: 1431 (1.28%)
+Non-pneumonia cases: 110689 (98.72%)
+Due to the very imbalance nature of the pneumonia cases versus non-pneumonia cases (1.28:98.72),
+I decided to balance both the training dataset and the validation dataset with a proportion of (1:5).
 
-**Description of Validation Dataset:** 
+1144 (pneumonia train) + 5720 (non_pneumonia train) = 6864 (all train)
+287 (pneumonia val) + 1435 (non_pneumonia val) = 1722 (all val)
+```
 
+The training dataset has many augmentations:
+
+```
+horizontal_flip = True, 
+vertical_flip = False, 
+height_shift_range = 0.1, 
+width_shift_range = 0.1, 
+rotation_range = 20, 
+shear_range = 0.1, 
+zoom_range = 0.1
+```
+
+Whereas the validation and test datasets have no augmentations.
 
 ### 5. Ground Truth
 
