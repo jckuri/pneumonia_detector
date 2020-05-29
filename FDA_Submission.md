@@ -158,19 +158,19 @@ Non-trainable params: 134,260,544
 
 << Insert P-R curve >>
 
-<center><img src="images/AUC.png" width='50%'/></center>
+<p align='center'><img src="images/AUC.png" width='50%'/></p>
 
-<center><img src="images/PR.png" width='50%'/></center>
+<p align='center'><img src="images/PR.png" width='50%'/></p>
 
-<center><img src="images/acc_learn_curve.png" width='50%'/></center>
+<p align='center'><img src="images/acc_learn_curve.png" width='50%'/></p>
 
-<center><img src="images/loss_learn_curve.png" width='50%'/></center>
+<p align='center'><img src="images/loss_learn_curve.png" width='50%'/></p>
 
-<center><img src="images/x-rays.png" width='50%'/></center>
+<p align='center'><img src="images/x-rays.png" width='50%'/></p>
 
 **Final Threshold and Explanation:**
 
-<center><img src="images/f1-score-plot.png" width='50%'/></center>
+<p align='center'><img src="images/f1-score-plot.png" width='50%'/></p>
 
 ### 4. Databases
  (For the below, include visualizations as they are useful and relevant)
