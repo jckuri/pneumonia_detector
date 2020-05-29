@@ -149,12 +149,9 @@ Non-trainable params: 134,260,544
 **Parameters:**
 * Types of augmentation used during training: horizontal_flip = True, vertical_flip = False, height_shift_range = 0.1, width_shift_range = 0.1, rotation_range = 20, shear_range = 0.1, zoom_range = 0.1
 * Batch size: 64
-* Optimizer learning rate: 
-  Adam optimizer and learning rate of 0.0001.
-* Layers of pre-existing architecture that were frozen: 
-  Non-trainable params: 134,260,544
-* Layers of pre-existing architecture that were fine-tuned: 
-  Trainable params: 10,489,857
+* Optimizer learning rate: Adam optimizer and learning rate of 0.0001.
+* Layers of pre-existing architecture that were frozen: 134,260,544 Non-trainable params
+* Layers of pre-existing architecture that were fine-tuned: 10,489,857 Trainable params
 * Layers added to pre-existing architecture:
 ```
     new_model.add(Dense(1024 * 2, activation='relu'))
@@ -180,11 +177,14 @@ AUC curve (Area Under Curve)
 
 **Final Threshold and Explanation:**
 
+The API generated many tentative thresholds for the final activation. If `activation >= threshold`, then the classifier suggests pneumonia. Otherwise, the classifier suggest non-pneumonia. All tentative thresholds produce different values for the F1-score. The optimal threshold is the one that produces the maximal F1-score.
+
 <p align='center'><img src="images/f1-score-plot.png" width='50%'/></p>
 
 ### 4. Databases
 
-
+The database used for training and validation is the file `Data_Entry_2017.csv`.<br/>
+Here are some visual examples found in such database. The classifier is somewhat accurate: 93.75% accuracy in the validation dataset. In the graph, `G` means ground truth and `P` means prediction. For example: `1G,1P` means 1 (pneumonia found) in ground truth and 1 pneumonia predicted by the classifier.
 
 <p align='center'><img src="images/x-rays.png" width='50%'/></p>
 
