@@ -229,6 +229,38 @@ https://arxiv.org/abs/1705.02315
 
 **Patient Population Description for FDA Validation Dataset:**
 
+**Distribution of Diseases**
+
+No Finding (53.84%) is the most common finding, followed by Infiltration (17.74%) and Effusion (11.87%).
+The most uncommon finding is Hernia (0.20%), followed by Pneumonia (1.28%), the disease we want to detect.
+
+**Distribution of diseases that are comorbid with pneumonia**
+
+The most common comorbidities that accompany pneumonia are Infiltration (42.27%) and Edema (23.75%).
+Given the high correlation of these diseases with Pneumonia, the datasets should be balanced regarding these correlations. Random sampling helps to alleviate this kind of biases.
+
+**Pneumonia cases versus non-pneumonia cases**
+
+Pneumonia cases are really rare, creating an unbalanced dataset.
+Sampling should be done in a special way in order to overcome this unbalance.
+
+**Number of diseases per patient**
+
+Patients with no diseases are very common (53.84%) in this dataset.
+Patients with 1 disease are almost 30% of the dataset.
+Patients with 2 diseases are slightly above 10% of the dataset.
+Patients with 3 diseases or more are rare.
+
+**Gender of patients**
+
+This dataset is slightly biased toward male patients.
+
+**Number of follow-ups of patients**
+
+In this dataset, most patients have few follow-ups.
+
+-----
+
 **Ground Truth Acquisition Methodology:**
 
 If you read the paper `ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases` (by Xiaosong Wang et al) <https://arxiv.org/abs/1705.02315>, you will notice that both the gold standard (biopsy to laboratory) and the silver standard (diagnoses of experts and NLP text-mining) were applied to label the dataset.
