@@ -279,6 +279,12 @@ If you read the paper `ChestX-ray8: Hospital-scale Chest X-ray Database and Benc
 
 **Algorithm Performance Standard:**
 
+The model managed to achieve excellent accuracies:<br/>
+Validation Accuracy = 93.75%<br/>
+Testing Accuracy = 100%
+
+`Accuracy = (TP + TN) / (TP + TN + FP + FN)`
+
 ```
 train_loss: 0.4956 - train_binary_accuracy: 0.8100 
 val_loss: 0.2666 - val_binary_accuracy: 0.9375
@@ -287,4 +293,14 @@ AP Score=0.41
 Optimal threshold: 0.4412, Maximum F1-score: 0.5000
 Accuracy at optimal threshold (0.4412): 0.9375
 test_binary_accuracy: 1.0
+```
+
+```
+test1.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
+test2.dcm, Study description: Cardiomegaly, ground_truth=False, prediction=False (CORRECT)
+test3.dcm, Study description: Effusion, ground_truth=False, prediction=False (CORRECT)
+test4.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
+test5.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
+test6.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
+ACCURACY=100.00%
 ```
