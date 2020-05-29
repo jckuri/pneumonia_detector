@@ -224,9 +224,9 @@ Whereas the validation and test datasets have no augmentations.
 
 ### 5. Ground Truth
 
-The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive.
+The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive and slower.
 
-The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. However, both the text sources and the NLP extraction could be inaccurate to some extend.
+The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
 
 For more information about how the dataset with ground truth was created, please read the following paper:
 ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al)
