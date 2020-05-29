@@ -236,6 +236,18 @@ https://arxiv.org/abs/1705.02315
 
 **Patient Population Description for FDA Validation Dataset:**
 
+**Gender of patients**
+
+<p align='center'><img src='EDA_images/gender.png' width='50%'/></p>
+
+This dataset is slightly biased toward male patients.
+
+**Age of patients**
+
+<p align='center'><img src='EDA_images/age.png' width='50%'/></p>
+
+Patients in their 50s are the most common type of patient in this dataset.
+
 **Distribution of Diseases**
 
 <p align='center'><img src='EDA_images/diseases.png' width='50%'/></p>
@@ -265,12 +277,6 @@ Patients with no diseases are very common (53.84%) in this dataset.
 Patients with 1 disease are almost 30% of the dataset.
 Patients with 2 diseases are slightly above 10% of the dataset.
 Patients with 3 diseases or more are rare.
-
-**Gender of patients**
-
-<p align='center'><img src='EDA_images/gender.png' width='50%'/></p>
-
-This dataset is slightly biased toward male patients.
 
 **Number of follow-ups of patients**
 
