@@ -173,7 +173,7 @@ Non-trainable params: 134,260,544
 <p align='center'><img src="images/PR.png" width='50%'/></p>
 
 **AUC curve (Area Under Curve)**<br/>
-The closer is the curve to the upper left corner, the better. AUC = 0.75. The closer AUC is to 1, the better.
+The closer is the curve to the upper left corner, the better. AUC = 0.72. The closer AUC is to 1, the better.
 <p align='center'><img src="images/AUC.png" width='50%'/></p>
 
 **Final Threshold and Explanation:**
