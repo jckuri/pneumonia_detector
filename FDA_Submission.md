@@ -188,7 +188,7 @@ Optimal threshold: 0.4412, Maximum F1-score: 0.5000
 
 ### 4. Databases
 
-The database used for training and validation is the file `Data_Entry_2017.csv`. This datase is described from the paper:
+The database used for training and validation is the file `Data_Entry_2017.csv`. This datase is described in the paper:
 
 ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al) https://arxiv.org/abs/1705.02315
 
