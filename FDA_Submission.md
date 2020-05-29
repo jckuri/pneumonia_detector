@@ -31,7 +31,7 @@ False negatives could cloud doctors' judgement. They could skip a real case of p
 
 Basically, the features learned by a VGG16 convnet were transferred from the more general domain of ImageNet images to the specific domain of chest X-ray images. The original VGG16 convnet was trained with photos of many kinds of objects. It has 1000 categories. Whereas the new convnet lacks the last layer and adds 3 new layers. The new convnet was trained to discriminate between chest X-Ray images of patients with and without pneumonia. So, it has 2 categories: Pneumonia and non-pneumonia.
 
-<center><img src='images/diagram.png' width='50%'/></center>
+<p align='center'><img src='images/diagram.png' width='50%'/></p>
 
 **DICOM Checking Steps:**
 
