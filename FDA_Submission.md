@@ -228,7 +228,7 @@ The **gold standard** for detecting pneumonia in chest X-ray images is to send a
 
 The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
 
-For more information about how the dataset with ground truth was created, please read the following paper:
+For more information about how the dataset with ground truth was created, please read the following paper:<br/>
 ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al)
 https://arxiv.org/abs/1705.02315
 
