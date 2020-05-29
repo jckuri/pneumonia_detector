@@ -278,3 +278,13 @@ In this dataset, most patients have few follow-ups.
 If you read the paper `ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases` (by Xiaosong Wang et al) <https://arxiv.org/abs/1705.02315>, you will notice that both the gold standard (biopsy to laboratory) and the silver standard (diagnoses of experts and NLP text-mining) were applied to label the dataset.
 
 **Algorithm Performance Standard:**
+
+```
+train_loss: 0.4956 - train_binary_accuracy: 0.8100 
+val_loss: 0.2666 - val_binary_accuracy: 0.9375
+AUC=0.72
+AP Score=0.41
+Optimal threshold: 0.4412, Maximum F1-score: 0.5000
+Accuracy at optimal threshold (0.4412): 0.9375
+test_binary_accuracy: 1.0
+```
