@@ -182,6 +182,10 @@ The API generated many tentative thresholds for the final activation. If `activa
 
 <p align='center'><img src="images/f1-score-plot.png" width='50%'/></p>
 
+```
+Optimal threshold: 0.4412, Maximum F1-score: 0.5000
+```
+
 ### 4. Databases
 
 The database used for training and validation is the file `Data_Entry_2017.csv`.<br/>
