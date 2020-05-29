@@ -231,20 +231,28 @@ https://arxiv.org/abs/1705.02315
 
 **Distribution of Diseases**
 
+<p align='center'><img source='EDA_images/diseases.png' width='50%'/></p>
+
 No Finding (53.84%) is the most common finding, followed by Infiltration (17.74%) and Effusion (11.87%).
 The most uncommon finding is Hernia (0.20%), followed by Pneumonia (1.28%), the disease we want to detect.
 
 **Distribution of diseases that are comorbid with pneumonia**
+
+<p align='center'><img source='EDA_images/comorbidities_pneumonia.png' width='50%'/></p>
 
 The most common comorbidities that accompany pneumonia are Infiltration (42.27%) and Edema (23.75%).
 Given the high correlation of these diseases with Pneumonia, the datasets should be balanced regarding these correlations. Random sampling helps to alleviate this kind of biases.
 
 **Pneumonia cases versus non-pneumonia cases**
 
+<p align='center'><img source='EDA_images/pneumonia_cases.png' width='50%'/></p>
+
 Pneumonia cases are really rare, creating an unbalanced dataset.
 Sampling should be done in a special way in order to overcome this unbalance.
 
 **Number of diseases per patient**
+
+<p align='center'><img source='EDA_images/number_diseases.png' width='50%'/></p>
 
 Patients with no diseases are very common (53.84%) in this dataset.
 Patients with 1 disease are almost 30% of the dataset.
@@ -253,9 +261,13 @@ Patients with 3 diseases or more are rare.
 
 **Gender of patients**
 
+<p align='center'><img source='EDA_images/gender.png' width='50%'/></p>
+
 This dataset is slightly biased toward male patients.
 
 **Number of follow-ups of patients**
+
+<p align='center'><img source='EDA_images/follow-ups.png' width='50%'/></p>
 
 In this dataset, most patients have few follow-ups.
 
