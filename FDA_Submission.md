@@ -31,7 +31,7 @@ False negatives could cloud doctors' judgement. They could skip a real case of p
 
 << Insert Algorithm Flowchart >>
 
-<center><img src='images/diagram.png'/></center>
+<center><img src='images/diagram.png' width='50%'/></center>
 
 **DICOM Checking Steps:**
 
@@ -158,19 +158,19 @@ Non-trainable params: 134,260,544
 
 << Insert P-R curve >>
 
-<center><img src="images/AUC.png"/></center>
+<center><img src="images/AUC.png" width='50%'/></center>
 
-<center><img src="images/PR.png"/></center>
+<center><img src="images/PR.png" width='50%'/></center>
 
-<center><img src="images/acc_learn_curve.png"/></center>
+<center><img src="images/acc_learn_curve.png" width='50%'/></center>
 
-<center><img src="images/loss_learn_curve.png"/></center>
+<center><img src="images/loss_learn_curve.png" width='50%'/></center>
 
-<center><img src="images/x-rays.png"/></center>
+<center><img src="images/x-rays.png" width='50%'/></center>
 
 **Final Threshold and Explanation:**
 
-<center><img src="images/f1-score-plot.png"/></center>
+<center><img src="images/f1-score-plot.png" width='50%'/></center>
 
 ### 4. Databases
  (For the below, include visualizations as they are useful and relevant)
