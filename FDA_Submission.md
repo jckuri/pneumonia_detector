@@ -147,7 +147,7 @@ Non-trainable params: 134,260,544
 ### 3. Algorithm Training
 
 **Parameters:**
-* Types of augmentation used during training
+* Types of augmentation used during training: horizontal_flip = True, vertical_flip = False, height_shift_range = 0.1, width_shift_range = 0.1, rotation_range = 20, shear_range = 0.1, zoom_range = 0.1
 * Batch size: 64
 * Optimizer learning rate: 
   Adam optimizer and learning rate of 0.0001.
@@ -164,26 +164,29 @@ Non-trainable params: 134,260,544
     new_model.add(Dense(1, activation='sigmoid'))
 ```
 
-<< Insert algorithm training performance visualization >> 
+Algorithm training performance:
 
-<< Insert P-R curve >>
-
-<p align='center'><img src="images/AUC.png" width='50%'/></p>
-
-<p align='center'><img src="images/PR.png" width='50%'/></p>
-
-<p align='center'><img src="images/acc_learn_curve.png" width='50%'/></p>
-
+Learning curve: Loss versus epochs
 <p align='center'><img src="images/loss_learn_curve.png" width='50%'/></p>
 
-<p align='center'><img src="images/x-rays.png" width='50%'/></p>
+Learning curve: Accuracy versus epochs
+<p align='center'><img src="images/acc_learn_curve.png" width='50%'/></p>
+
+P-R curve (Precision versus Recall)
+<p align='center'><img src="images/PR.png" width='50%'/></p>
+
+AUC curve (Area Under Curve)
+<p align='center'><img src="images/AUC.png" width='50%'/></p>
 
 **Final Threshold and Explanation:**
 
 <p align='center'><img src="images/f1-score-plot.png" width='50%'/></p>
 
 ### 4. Databases
- (For the below, include visualizations as they are useful and relevant)
+
+
+
+<p align='center'><img src="images/x-rays.png" width='50%'/></p>
 
 **Description of Training Dataset:** 
 
