@@ -310,7 +310,7 @@ Due to the very imbalance nature of the whole dataset, the training dataset was 
 1144 (pneumonia train) + 1144 (non_pneumonia train) = 2288 (all train)
 ```
 
-From a total of 1,431 pneumonia cases, 1,144 pneumonia cases (80% of the pneumonia cases) were randomly sampled (without repetition) and put in the training dataset.
+From a total of 1,431 pneumonia cases, 1,144 pneumonia cases (80% of the pneumonia cases) were randomly sampled (without repetition) and put in the training dataset.<br/>
 From a total of 110,689 non-pneumonia cases, 1,144 non-pneumonia cases were randomly sampled (without repetition) and put in the training dataset.
 
 The training dataset has many augmentations:
@@ -334,7 +334,7 @@ Due to the very imbalance nature of the whole dataset, 1,431 pneumonia cases (1.
 287 (pneumonia val) + 2870 (non_pneumonia val) = 3157 (all val)
 ```
 
-From a total of 1,431 pneumonia cases, 287 pneumonia cases (20% of the pneumonia cases) were randomly sampled (without repetition) and put in the validation dataset.
+From a total of 1,431 pneumonia cases, 287 pneumonia cases (20% of the pneumonia cases) were randomly sampled (without repetition) and put in the validation dataset.<br/>
 From a total of 110,689 non-pneumonia cases, 2870 non-pneumonia cases were randomly sampled (without repetition) and put in the validation dataset.
 
 The validation dataset has no augmentations, except the normalization:
