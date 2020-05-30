@@ -35,7 +35,7 @@ Basically, the features learned by a VGG16 convnet were transferred from the mor
 
 Computer Aided Diagnosis
 
-<p align='center'><img src='images/cad_diagram.png' width='50%'/></p>
+<p align='center'><img src='images/cad_diagram.png'/></p>
 
 **DICOM Checking Steps:**
 
