@@ -47,7 +47,7 @@ Basically, the features learned by a VGG16 convnet were transferred from the mor
 
 <p align='center'><img src='images/diagram.png' width='50%'/></p>
 
-The function of this device could be summarize in these steps. First, a patient has some kind of breathing difficulty. Then, the patient goes to the hospital. Doctors take a chest X-ray of the patient. Then, the chest X-ray DICOM file is fed into the CNN of this device. This device suggests a diagnosis in 1 second: Pneumonia or non-pneumonia. This computerized diagnosis helps doctors to finally make a **Computer Aided Diagnosis (CAD)**, which is a powerful synergy between doctors and artificial intelligence. This computerized help also seeks to prevent doctors from getting burnout. Sometimes doctors are overwhelmed by work.
+The function of this device could be summarize in these steps. First, a patient has some kind of breathing difficulty. Then, the patient goes to the hospital. Doctors take a chest X-ray of the patient. Then, the chest X-ray DICOM file is fed into the CNN of this device. This device suggests a diagnosis in 1 second: Pneumonia or non-pneumonia. This computerized diagnosis helps doctors to finally make a **Computer Aided Diagnosis (CAD)**, which is a powerful synergy between doctors and artificial intelligence. This computerized help also seeks to prevent physician burnout. Sometimes doctors are overwhelmed by work.
 
 <p align='center'><img src='images/cad_diagram.png'/></p>
 
@@ -322,7 +322,7 @@ https://arxiv.org/abs/1705.02315
 
 If you read that paper, you will notice that both the gold standard (biopsy to laboratory) and the silver standard (diagnoses of experts and NLP text-mining) were applied to label the dataset used to train and to validate this model.
 
-However, the test dataset of the FDA's Validation Plan most probably uses the gold standard to create ground truth labels.
+However, the test dataset (FDA Validation Dataset) most probably uses the gold standard to create ground truth labels.
 
 **Algorithm Performance Standard:**
 
