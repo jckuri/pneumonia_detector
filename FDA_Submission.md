@@ -222,9 +222,10 @@ Accuracy: 0.8906
 
 ### 4. Databases
 
-The database used for training and validation is the file `Data_Entry_2017.csv`. This datase is described in the paper:
+The database used for training and validation is the file `Data_Entry_2017.csv`. This database is described in the paper:
 
-ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al) https://arxiv.org/abs/1705.02315
+ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al)<br/>
+https://arxiv.org/abs/1705.02315
 
 Here are some visual examples found in such database. The classifier is somewhat accurate: 93.75% accuracy in the validation dataset. In the graph, `G` means ground truth and `P` means prediction. For example: `1G,1P` means 1 (pneumonia found) in ground truth and 1 pneumonia predicted by the classifier.
 
@@ -232,47 +233,12 @@ Here are some visual examples found in such database. The classifier is somewhat
 
 **Description of Training Dataset and Validation Dataset:** 
 
-```
-Pneumonia cases: 1431 (1.28%)
-Non-pneumonia cases: 110689 (98.72%)
-Due to the very imbalance nature of the pneumonia cases versus non-pneumonia cases (1.28:98.72),
-both the training dataset and the validation dataset were balanced with a proportion of (1:5).
+Both the training dataset and the validation dataset were randomly sampled from the file `Data_Entry_2017.csv`, with 112,104 patients. This database is described in the paper:
 
-1144 (pneumonia train) + 5720 (non_pneumonia train) = 6864 (all train)
-287 (pneumonia val) + 1435 (non_pneumonia val) = 1722 (all val)
-```
-
-The training dataset has many augmentations:
-
-```
-horizontal_flip = True, 
-vertical_flip = False, 
-height_shift_range = 0.1, 
-width_shift_range = 0.1, 
-rotation_range = 20, 
-shear_range = 0.1, 
-zoom_range = 0.1
-```
-
-Whereas the validation and test datasets have no augmentations.
-
-### 5. Ground Truth
-
-The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive and slower.
-
-The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
-
-Ideally, ground truth should be created using the gold standard. However, the silver standard is often used due to the limited availability of resources.
-
-For more information about how the dataset with ground truth was created, please read the following paper:<br/>
 ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al)<br/>
 https://arxiv.org/abs/1705.02315
 
-If you read that paper, you will notice that both the gold standard (biopsy to laboratory) and the silver standard (diagnoses of experts and NLP text-mining) were applied to label the dataset used to train and to validate this model.
-
-### 6. FDA Validation Plan
-
-**Patient Population Description for FDA Validation Dataset:**
+Given the training dataset and the validation dataset were randomly sampled from this database of chest X-ray samples and there is no bias at all, it's perfectly reasonable to describe both the training dataset and the validation dataset **equally**. And after describing them, some subtle differences will be exposed.
 
 **Gender of patients**
 
@@ -322,7 +288,62 @@ Patients with 3 diseases or more are rare.
 
 In this dataset, most patients have few follow-ups.
 
------
+Now, some subtle differences between both datasets will be exposed.
+
+**Description of Training Dataset:**
+
+The whole dataset in the file `Data_Entry_2017.csv` has 112,104 patients. It has 1,431 pneumonia cases (1.28%) and 110,689 non-pneumonia cases (98.72%).
+
+Due to the very imbalance nature of the whole dataset, the training dataset was rebalanced with a proportion of 1:1:
+
+```
+1144 (pneumonia train) + 1144 (non_pneumonia train) = 2288 (all train)
+```
+
+The training dataset has many augmentations:
+
+```
+rescale = 1. / 255,
+horizontal_flip = True, 
+vertical_flip = False, 
+height_shift_range = 0.1, 
+width_shift_range = 0.1, 
+rotation_range = 20, 
+shear_range = 0.1, 
+zoom_range = 0.1
+```
+
+**Description of Validation Dataset:**
+
+Due to the very imbalance nature of the whole dataset, 1,431 pneumonia cases (1.28%) and 110,689 non-pneumonia cases (98.72%), the validation dataset was rebalanced with a proportion of 1:10:
+
+```
+287 (pneumonia val) + 2870 (non_pneumonia val) = 3157 (all val)
+```
+
+The validation dataset has no augmentations, except the normalization:
+
+```
+rescale = 1. / 255
+```
+
+### 5. Ground Truth
+
+The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive and slower.
+
+The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
+
+Ideally, ground truth should be created using the gold standard. However, the silver standard is often used due to the limited availability of resources.
+
+For more information about how the dataset with ground truth was created, please read the following paper:<br/>
+ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al)<br/>
+https://arxiv.org/abs/1705.02315
+
+If you read that paper, you will notice that both the gold standard (biopsy to laboratory) and the silver standard (diagnoses of experts and NLP text-mining) were applied to label the dataset used to train and to validate this model.
+
+### 6. FDA Validation Plan
+
+**Patient Population Description for FDA Validation Dataset:**
 
 **Ground Truth Acquisition Methodology:**
 
