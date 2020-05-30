@@ -182,16 +182,22 @@ Non-trainable params: 134,260,544
 **Algorithm training performance:**
 
 **Learning curve: Loss versus epochs**
+
+The best model was saved at the thrid epoch in which `val_loss=0.5457` and `val_binary_accuracy=0.9375` (93.75%)
+
 <p align='center'><img src="images/loss_learn_curve.png" width='50%'/></p>
 
 **Learning curve: Accuracy versus epochs**
+
+The best model was saved at the thrid epoch in which `val_loss=0.5457` and `val_binary_accuracy=0.9375` (93.75%)
+
 <p align='center'><img src="images/acc_learn_curve.png" width='50%'/></p>
 
 **P-R curve (Precision versus Recall)**<br/>
 <p align='center'><img src="images/PR.png" width='50%'/></p>
 
 **AUC curve (Area Under Curve)**<br/>
-The closer is the curve to the upper left corner, the better. AUC = 0.72. The closer AUC is to 1, the better.
+The closer is the curve to the upper left corner, the better. AUC = 0.82. The closer AUC is to 1, the better.
 <p align='center'><img src="images/AUC.png" width='50%'/></p>
 
 **Final Threshold and Explanation:**
@@ -201,7 +207,17 @@ The API generated many tentative thresholds for the final activation. If `activa
 <p align='center'><img src="images/f1-score-plot.png" width='50%'/></p>
 
 ```
-Optimal threshold: 0.4412, Maximum F1-score: 0.5000
+F1-scores:
+[0.19354839 0.13333333 0.13793103 0.14285714 0.14814815 0.15384615
+ 0.16       0.16666667 0.17391304 0.18181818 0.19047619 0.2
+ 0.21052632 0.22222222 0.23529412 0.25       0.26666667 0.28571429
+ 0.30769231 0.33333333 0.36363636 0.4        0.22222222 0.25
+ 0.28571429        nan        nan        nan 0.        ]
+
+Index is: 21
+Optimal threshold: 0.4909
+Maximum F1-score: 0.4000
+Accuracy: 0.8906
 ```
 
 ### 4. Databases
