@@ -17,7 +17,7 @@ This software will help doctors diagnose pneumonia from chest X-rays.
 
 If you carefully examine the distribution of ages of the patients of which the model was trained and validated, you will notice that the big majority of patients have an age between 20 and 70 years. Patients whose age is outside such age range will probably receive a wrong diagnose from this device.
 
-<p align='center'><img src='EDA_images/ages.png' width='50%'/></p>
+<p align='center'><img src='EDA_images/age.png' width='50%'/></p>
 
 **Device Limitations:**
 The device only works with chest X-rays with the DICOM format. If you use other file format, the software won't be able to read the file. If you take other type of X-ray or other type of medical image, the software will produce erroneous results.
