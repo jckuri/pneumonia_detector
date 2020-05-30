@@ -19,8 +19,17 @@ If you carefully examine the distribution of ages of the patients of which the m
 
 <p align='center'><img src='EDA_images/age.png' width='50%'/></p>
 
+This kind of bias does not occur regarding the gender of patients. Male patients and female patients have similar proportions. So, this device works properly in both sexes.
+
 **Device Limitations:**
-The device only works with chest X-rays with the DICOM format. If you use other file format, the software won't be able to read the file. If you take other type of X-ray or other type of medical image, the software will produce erroneous results.
+
+As stated above, the big majority of patients have an age between 20 and 70 years. Patients whose age is outside such age range will probably receive a wrong diagnose from this device. Because there are few patients who are too young or too old.
+
+If you carefully examine the distribution of comorbidities, the diseases which are comorbid with pneumonia, you will notice that some diseases like Infiltration, Edema, Effusion, and Atelectasis are highly correlated with pneumonia. It is well known that the bigger the correlation of the comorbidity, the more confusion will cause in this device. In fact, the only mistake this device committed in the FDA Validation Dataset was a patient with **Effusion**, a comorbidity highly correlated with pneumonia. Hence, the device was confused. A good recommendation to doctors is to pay special attention to patients with comorbidities highly correlated with pneumonia.
+
+<p align='center'><img src='EDA_images/comorbidities_pneumonia.png' width='50%'/></p>
+
+Moreover, the device only works with chest X-rays with the DICOM format. If you use other file format, the software won't be able to read the file. If you take other type of X-ray, other body part different than the chest, or other type of medical image, the software will produce erroneous results.
 
 **Clinical Impact of Performance:**
 
