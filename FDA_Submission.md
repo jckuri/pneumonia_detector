@@ -165,19 +165,29 @@ Non-trainable params: 134,260,544
 ### 3. Algorithm Training
 
 **Parameters:**
-* Types of augmentation used during training: horizontal_flip = True, vertical_flip = False, height_shift_range = 0.1, width_shift_range = 0.1, rotation_range = 20, shear_range = 0.1, zoom_range = 0.1
+* Types of augmentation used during training: 
+    ```
+    rescale = 1. / 255,
+    horizontal_flip = True, 
+    vertical_flip = False, 
+    height_shift_range = 0.1, 
+    width_shift_range = 0.1, 
+    rotation_range = 20, 
+    shear_range = 0.1, 
+    zoom_range = 0.1
+    ```
 * Batch size: 64
 * Optimizer learning rate: Adam optimizer and learning rate of 0.0001.
 * Layers of pre-existing architecture that were frozen: 134,260,544 Non-trainable params
 * Layers of pre-existing architecture that were fine-tuned: 10,489,857 Trainable params
 * Layers added to pre-existing architecture:
-```
-    new_model.add(Dense(1024 * 2, activation='relu'))
-    new_model.add(Dropout(0.25))
-    new_model.add(Dense(1024, activation='relu'))
-    new_model.add(Dropout(0.25))
-    new_model.add(Dense(1, activation='sigmoid'))
-```
+    ```
+        new_model.add(Dense(1024 * 2, activation='relu'))
+        new_model.add(Dropout(0.25))
+        new_model.add(Dense(1024, activation='relu'))
+        new_model.add(Dropout(0.25))
+        new_model.add(Dense(1, activation='sigmoid'))
+    ```
 
 **Algorithm training performance:**
 
