@@ -33,6 +33,10 @@ Basically, the features learned by a VGG16 convnet were transferred from the mor
 
 <p align='center'><img src='images/diagram.png' width='50%'/></p>
 
+Computer Aided Diagnosis
+
+<p align='center'><img src='images/cad_diagram.png' width='50%'/></p>
+
 **DICOM Checking Steps:**
 
 Doctors only need to take a chest X-ray. The machine will generate a DICOM file like this:
