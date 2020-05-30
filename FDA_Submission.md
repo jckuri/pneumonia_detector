@@ -29,15 +29,17 @@ If you carefully examine the distribution of comorbidities, the diseases which a
 
 <p align='center'><img src='EDA_images/comorbidities_pneumonia.png' width='50%'/></p>
 
+This device will also fail with patients with medical implants in the chest area like metal bones, screws, machines, and so on. Because those medical implants will appear very bright in the X-ray, confusing the device.
+
 Moreover, the device only works with chest X-rays with the DICOM format. If you use other file format, the software won't be able to read the file. If you take other type of X-ray, other body part different than the chest, or other type of medical image, the software will produce erroneous results.
 
 **Clinical Impact of Performance:**
 
 How false positives might affect a patient?<br/>
-False positives might alarm doctors in vain. They will lose some time confirming that patients really have pneumonia.
+False positives might alarm doctors in vain. They will lose some time confirming that patients really have pneumonia. Doctors will experience fatigue more often and will commit more mistakes, which negatively affects patients. If doctors also believe that a false positive is a positive case of pneumonia, patients will be alarmed in vain. Patients will spend more time and more money doing unnecessary additional exams in order to further investigate their cases. Some patients will even take unnecessary medication.
 
 How false negatives might affect a patient?<br/>
-False negatives could cloud doctors' judgement. They could skip a real case of pneumonia.
+False negatives could cloud doctors' judgement. They could skip a real case of pneumonia, which could be fatal for patients who really have pneumonia.
 
 ### 2. Algorithm Design and Function
 
