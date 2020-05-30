@@ -47,8 +47,7 @@ Basically, the features learned by a VGG16 convnet were transferred from the mor
 
 <p align='center'><img src='images/diagram.png' width='50%'/></p>
 
-Computer Aided Diagnosis
-Take a chest X-ray. Use the resulting file as an input for this software. The software will suggest whether that patient has pneumonia or not with an accuracy of 93.75% in the validation dataset. Human doctors can use this suggestion in order to help and to accelerate the diagnosis of pneumonia. In this way, doctor will avoid burnout.
+The function of this device could be summarize in these steps. First, a patient has some kind of breathing difficulty. Then, the patient goes to the hospital. Doctors take a chest X-ray of the patient. Then, the chest X-ray DICOM file is fed into the CNN of this device. This device suggests a diagnosis in 1 second: Pneumonia or non-pneumonia. This computerized diagnosis helps doctors to finally make a **Computer Aided Diagnosis (CAD)**, which is a powerful synergy between doctors and artificial intelligence. This computerized help also seeks to prevent doctors from getting burnout. Sometimes doctors are overwhelmed by work.
 
 <p align='center'><img src='images/cad_diagram.png'/></p>
 
