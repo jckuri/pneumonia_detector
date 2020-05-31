@@ -405,4 +405,4 @@ ACCURACY=66.67% (2/3)
 Average time: 1.01 seconds
 ```
 
-The accuracy is decent: 66.67%. 
+The accuracy is decent: `66.67%`. The only mistake this device committed in the FDA Validation Dataset was a patient with Effusion, a comorbidity highly correlated with pneumonia. It is well known that the bigger the correlation of the comorbidity, the more confusion will cause in this device. Hence, a good recommendation to doctors is to pay special attention to the automated diagnoses of patients with comorbidities highly correlated with pneumonia.
