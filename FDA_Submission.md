@@ -361,6 +361,15 @@ If you read that paper, you will notice that both the gold standard (biopsy to l
 
 **Patient Population Description for FDA Validation Dataset:**
 
+The FDA Validation Dataset has 3 patients.<br/>
+Their ages are 58, 61, and 81 years.
+The 3 patients are male. There is no female patient.
+From all 6 exams:
+- 5 exams are DX and 1 exam is CT;
+- 4 exams show no finding; 1 exam show cardiomegaly; and 1 exam show effusion;
+- 5 exams took an image of the chest and 1 exam took an image of the ribcage;
+- 3 exams has the PA position; 2 exams has the AP position; and 1 exam has XX position.
+
 **Ground Truth Acquisition Methodology:**
 
 The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive and slower.
