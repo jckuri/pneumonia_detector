@@ -362,8 +362,8 @@ If you read that paper, you will notice that both the gold standard (biopsy to l
 **Patient Population Description for FDA Validation Dataset:**
 
 The FDA Validation Dataset has 3 patients.<br/>
-Their ages are 58, 61, and 81 years.
-The 3 patients are male. There is no female patient.
+Their ages are 58, 61, and 81 years.<br/>
+The 3 patients are male. There is no female patient.<br/>
 From all 6 exams:
 - 5 exams are DX and 1 exam is CT;
 - 4 exams show no finding; 1 exam show cardiomegaly; and 1 exam show effusion;
