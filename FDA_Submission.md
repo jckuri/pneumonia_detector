@@ -15,7 +15,7 @@ This software will help doctors diagnose pneumonia from chest X-rays.
 
 **Indications for Use:**
 
-If you carefully examine the distribution of ages of the patients of which the model was trained and validated, you will notice that the big majority of patients have an age between 20 and 70 years. Patients whose age is outside such age range will probably receive a wrong diagnose from this device; and this device have not received enough training in those cases.
+If you carefully examine the distribution of ages of the patients of which the model was trained and validated, you will notice that the big majority of patients have an age between 20 and 70 years. Patients whose age is outside such age range will probably receive a wrong diagnose from this device.
 
 <p align='center'><img src='EDA_images/age.png' width='50%'/></p>
 
@@ -23,7 +23,7 @@ This kind of bias does not occur regarding the gender of patients. Male patients
 
 **Device Limitations:**
 
-As stated above, the big majority of patients have an age between 20 and 70 years. Patients whose age is outside such age range will probably receive a wrong diagnose from this device. Because there are few patients who are too young or too old; and this device have not received enough training in those cases.
+As stated above, the big majority of patients have an age between 20 and 70 years. Patients whose age is outside such age range will probably receive a wrong diagnose from this device. Because there are few patients who are too young or too old; because this device have not received enough training in those cases.
 
 If you carefully examine the distribution of comorbidities, the diseases which are comorbid with pneumonia, you will notice that some diseases like Infiltration, Edema, Effusion, and Atelectasis are highly correlated with pneumonia. It is well known that the bigger the correlation of the comorbidity, the more confusion will cause in this device. In fact, the only mistake this device committed in the FDA Validation Dataset was a patient with **Effusion**, a comorbidity highly correlated with pneumonia. Hence, the device was confused. A good recommendation to doctors is to pay special attention to the automated diagnoses of patients with comorbidities highly correlated with pneumonia.
 
