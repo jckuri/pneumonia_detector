@@ -351,7 +351,7 @@ rescale = 1. / 255
 
 The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive and slower.
 
-The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
+The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has a different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
 
 Ideally, ground truth should be created using the gold standard. However, the silver standard is often used due to the limited availability of resources.
 
@@ -378,7 +378,7 @@ From all 6 exams:
 
 The **gold standard** for detecting pneumonia in chest X-ray images is to send a biopsy to the laboratory. This method is super accurate to consider it ground truth. But it is more expensive and slower.
 
-The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
+The **silver standard** for detecting pneumonia in chest x-ray images is to make some experts vote with their diagnoses. Each expert has a different weight depending on his/her experience. Another method is to extract diagnoses from text sources via NLP algorithms. These methods are less accurate, cheaper, and faster.
 
 Ideally, ground truth should be created using the gold standard. However, the silver standard is often used due to the limited availability of resources.
 
