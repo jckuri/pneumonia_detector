@@ -392,7 +392,7 @@ If you read this ground-breaking paper "CheXNet: Radiologist-Level Pneumonia Det
 
 <p align='center'><img src='images/paper_f1-scores.png' width='50%'/></p>
 
-Moreover, the average time this device takes to diagnose pneumonia is just `1.01` seconds, which is many orders of magnitude faster than the average time human radiologists take, i.e. many minutes per radiography.
+Moreover, the average time this device takes to diagnose pneumonia is just `1.01` seconds, in a normal computer without GPUs, which is many orders of magnitude faster than the average time human radiologists take, i.e. many minutes per radiography.
 
 ```
 test1.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT), time=1.12 seconds
