@@ -388,7 +388,9 @@ Neural networks are continuous interpolators. In other words, their outputs are 
 
 However, the value 0.5 is not the best threshold possible. Many thresholds were examined and the best threshold `0.4909` produced an F1-score of `0.40` and an accuracy of `0.8906 (89.06%)`.
 
+If you read this ground-breaking paper, you will notice that the average F1-score of radiologists is `0.387`, which is below the F1-score of `0.40` of this model. This means the performance of this device is reasonably good to be accepted by the FDA as a CAD system (Computer Aided Diagnosis).
 
+<p align='center'><img src='images/paper_f1-scores.png' width='50%'/></p>
 
 ```
 test1.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT), time=1.12 seconds
