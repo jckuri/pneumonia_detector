@@ -193,13 +193,13 @@ Non-trainable params: 134,260,544
 
 **Learning curve: Loss versus epochs**
 
-The best model was saved at the thrid epoch in which `val_loss=0.5457` and `val_binary_accuracy=0.9375` (93.75%)
+The best model was saved at the third epoch in which `val_loss=0.5457` and `val_binary_accuracy=0.9375` (93.75%)
 
 <p align='center'><img src="images/loss_learn_curve.png" width='50%'/></p>
 
 **Learning curve: Accuracy versus epochs**
 
-The best model was saved at the thrid epoch in which `val_loss=0.5457` and `val_binary_accuracy=0.9375` (93.75%)
+The best model was saved at the third epoch in which `val_loss=0.5457` and `val_binary_accuracy=0.9375` (93.75%)
 
 <p align='center'><img src="images/acc_learn_curve.png" width='50%'/></p>
 
@@ -382,28 +382,21 @@ The test dataset (FDA Validation Dataset) most probably uses the gold standard (
 
 **Algorithm Performance Standard:**
 
-The model managed to achieve excellent accuracies:<br/>
-Validation Accuracy = 93.75%<br/>
-Testing Accuracy = 100%
+In summary, the model was trained and it produced the best performance at the third epoch in which `val_loss=0.5457` and `val_binary_accuracy=0.9375 (93.75%)`. The best model was saved in the third epoch. 
 
-`Accuracy = (TP + TN) / (TP + TN + FP + FN)`
+Neural networks are continuous interpolators. In other words, their outputs are not binary: 0 and 1. Their outputs are rather a number between the range [0,1]. The metric `val_binary_accuracy` has a threshold of 0.5. When the neural network activation is greater than 0.5, the model diagnoses pneumonia. Otherwise, the model diagnoses non-pneumonia.
 
-```
-train_loss: 0.4956 - train_binary_accuracy: 0.8100 
-val_loss: 0.2666 - val_binary_accuracy: 0.9375
-AUC=0.72
-AP Score=0.41
-Optimal threshold: 0.4412, Maximum F1-score: 0.5000
-Accuracy at optimal threshold (0.4412): 0.9375
-test_binary_accuracy: 1.0
-```
+However, the value 0.5 is not the best threshold possible. Many thresholds were examined and the best threshold `0.4909` produced an F1-score of `0.40` and an accuracy of `0.8906 (89.06%)`.
+
+
 
 ```
-test1.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
-test2.dcm, Study description: Cardiomegaly, ground_truth=False, prediction=False (CORRECT)
-test3.dcm, Study description: Effusion, ground_truth=False, prediction=False (CORRECT)
-test4.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
-test5.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
-test6.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT)
-ACCURACY=100.00%
+test1.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT), time=1.12 seconds
+test2.dcm, Study description: Cardiomegaly, ground_truth=False, prediction=False (CORRECT), time=0.96 seconds
+test3.dcm, Study description: Effusion, ground_truth=False, prediction=True (WRONG), time=0.95 seconds
+test4.dcm, This DICOM file is INVALID: Body Part Examined = RIBCAGE, PatientPosition = PA, Modality = DX
+test5.dcm, This DICOM file is INVALID: Body Part Examined = CHEST, PatientPosition = PA, Modality = CT
+test6.dcm, This DICOM file is INVALID: Body Part Examined = CHEST, PatientPosition = XX, Modality = DX
+ACCURACY=66.67% (2/3)
+Average time: 1.01 seconds
 ```
