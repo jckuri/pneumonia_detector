@@ -392,6 +392,8 @@ If you read this ground-breaking paper, you will notice that the average F1-scor
 
 <p align='center'><img src='images/paper_f1-scores.png' width='50%'/></p>
 
+Moreover, the average time this device takes to diagnose pneumonia is just `1.01` seconds, which is many orders of magnitude faster than the average time human radiologists take, i.e. many minutes per radiography.
+
 ```
 test1.dcm, Study description: No Finding, ground_truth=False, prediction=False (CORRECT), time=1.12 seconds
 test2.dcm, Study description: Cardiomegaly, ground_truth=False, prediction=False (CORRECT), time=0.96 seconds
@@ -402,3 +404,5 @@ test6.dcm, This DICOM file is INVALID: Body Part Examined = CHEST, PatientPositi
 ACCURACY=66.67% (2/3)
 Average time: 1.01 seconds
 ```
+
+The accuracy is decent: 66.67%. 
