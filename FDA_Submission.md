@@ -378,13 +378,7 @@ The **silver standard** for detecting pneumonia in chest x-ray images is to make
 
 Ideally, ground truth should be created using the gold standard. However, the silver standard is often used due to the limited availability of resources.
 
-For more information about how the dataset with ground truth was created, please read the following paper:<br/>
-ChestX-ray8: Hospital-scale Chest X-ray Database and Benchmarks on Weakly-Supervised Classification and Localization of Common Thorax Diseases (by Xiaosong Wang et al)<br/>
-https://arxiv.org/abs/1705.02315
-
-If you read that paper, you will notice that both the gold standard (biopsy to laboratory) and the silver standard (diagnoses of experts and NLP text-mining) were applied to label the dataset used to train and to validate this model.
-
-However, the test dataset (FDA Validation Dataset) most probably uses the gold standard to create ground truth labels.
+The test dataset (FDA Validation Dataset) most probably uses the gold standard (biopsy to laboratory) to create ground truth labels. And perhaps in some cases, it probably uses the silver standard (diagnoses of experts with many years of experience). At this level, the most probable method is a mixture of both gold standard and silver standard, which gives even more confidence to the ground-truth labels.
 
 **Algorithm Performance Standard:**
 
