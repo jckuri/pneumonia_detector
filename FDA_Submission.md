@@ -35,10 +35,14 @@ Moreover, the device only works with chest X-rays with the DICOM format. If you 
 
 **Clinical Impact of Performance:**
 
-How false positives might affect a patient?<br/>
+How false positives might affect a patient?
+
 False positives might alarm doctors in vain. They will lose some time confirming that patients really have pneumonia. Doctors will experience fatigue more often and will commit more mistakes, which negatively affects patients. If doctors also believe that a false positive is a positive case of pneumonia, patients will be alarmed in vain. Patients will spend more time and more money doing unnecessary additional exams in order to further investigate their cases. Some patients will even take unnecessary medication.
 
-How false negatives might affect a patient?<br/>
+Patients with diseases comorbid with pneumonia can trigger false positives as well. And if doctors also misdiagnose pneumonia, perhaps patients with other diseases will wrongfully take medication for pneumonia.
+
+How false negatives might affect a patient?
+
 False negatives could cloud doctors' judgement. They could skip a real case of pneumonia, which could be fatal for patients who really have pneumonia.
 
 ### 2. Algorithm Design and Function
